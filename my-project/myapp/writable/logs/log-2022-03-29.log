@@ -1,0 +1,280 @@
+CRITICAL - 2022-03-29 20:57:38 --> Class 'Entities\Concierto' not found
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->agregar02Continuar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-29 20:58:49 --> Class 'Entities\Concierto' not found
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->agregar02Continuar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-29 21:12:19 --> Class 'Entities\Concierto' not found
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->agregar02Continuar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-29 21:12:49 --> Class 'Entities\Concierto' not found
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->agregar02Continuar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-29 21:18:09 --> Class 'Entities\Concierto' not found
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->agregar02Continuar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-29 21:26:59 --> Call to undefined function App\Controllers\index()
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->agregar02Continuar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-29 21:27:32 --> Use of undefined constant this - assumed 'this' (this will throw an Error in a future version of PHP)
+#0 /app/myapp/app/Controllers/ConciertoCrud.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->agregar02Continuar()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 21:27:50 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';'
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(797): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-29 21:39:21 --> syntax error, unexpected '='
+#0 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Controllers/ConciertoCrud.php(19): view()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->index()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-29 21:39:54 --> include(/App/Views/includes/encabezado.php): failed to open stream: No such file or directory
+#0 /app/myapp/app/Views/concierto/lista.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/concierto/lista.php(3): include()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/ConciertoCrud.php(19): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-29 21:40:42 --> include(App/Views/includes/encabezado.php): failed to open stream: No such file or directory
+#0 /app/myapp/app/Views/concierto/lista.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/concierto/lista.php(3): include()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/ConciertoCrud.php(19): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-29 21:41:35 --> include(App/Views/includes/encabezado.php): failed to open stream: No such file or directory
+#0 /app/myapp/app/Views/concierto/lista.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/concierto/lista.php(3): include()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/ConciertoCrud.php(19): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-29 21:45:15 --> Undefined property: CodeIgniter\View\View::$load
+#0 /app/myapp/app/Views/concierto/lista.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/ConciertoCrud.php(19): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->index()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-29 21:48:21 --> syntax error, unexpected '$this' (T_VARIABLE)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(797): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-29 21:48:34 --> Undefined property: App\Controllers\ConciertoCrud::$load
+#0 /app/myapp/app/Controllers/ConciertoCrud.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->index()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 21:48:36 --> Undefined property: App\Controllers\ConciertoCrud::$load
+#0 /app/myapp/app/Controllers/ConciertoCrud.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->index()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 22:22:41 --> Undefined variable: concierto
+#0 /app/myapp/app/Views/concierto/editar01Formulario.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/ConciertoCrud.php(51): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar01Formulario()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-29 22:23:15 --> Undefined variable: concierto
+#0 /app/myapp/app/Views/concierto/editar01Formulario.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/ConciertoCrud.php(51): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar01Formulario()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-29 22:23:19 --> Undefined variable: concierto
+#0 /app/myapp/app/Views/concierto/editar01Formulario.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/ConciertoCrud.php(51): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar01Formulario()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-29 22:28:25 --> syntax error, unexpected '$', expecting variable (T_VARIABLE)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(797): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-29 22:28:50 --> syntax error, unexpected 'return' (T_RETURN)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(797): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-29 22:29:23 --> syntax error, unexpected 'return' (T_RETURN)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(797): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-29 22:29:52 --> Call to undefined function App\Controllers\recuperaConcierto()
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar01Formulario()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-29 22:31:07 --> Undefined variable: data
+#0 /app/myapp/app/Controllers/ConciertoCrud.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar01Formulario()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 22:33:03 --> Undefined variable: data
+#0 /app/myapp/app/Controllers/ConciertoCrud.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar01Formulario()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 22:33:04 --> Undefined variable: data
+#0 /app/myapp/app/Controllers/ConciertoCrud.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar01Formulario()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 22:34:33 --> Undefined variable: registros
+#0 /app/myapp/app/Views/concierto/lista.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/ConciertoCrud.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar02Continuar()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-29 23:08:16 --> syntax error, unexpected '?>', expecting ')'
+#0 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Controllers/ConciertoCrud.php(71): view()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->eliminar01Formulario()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-29 23:16:37 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(797): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-29 23:17:08 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /app/myapp/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /app/myapp/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /app/myapp/system/CodeIgniter.php(797): class_exists()
+#5 /app/myapp/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-29 23:17:28 --> Call to undefined method App\Models\ConciertoModel::remove
+#0 /app/myapp/app/Controllers/ConciertoCrud.php(88): CodeIgniter\Model->__call()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->eliminar02Continuar()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-29 23:19:16 --> There is no data to update.
+#0 /app/myapp/system/BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+#1 /app/myapp/system/BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray()
+#2 /app/myapp/system/Model.php(651): CodeIgniter\BaseModel->update()
+#3 /app/myapp/app/Controllers/ConciertoCrud.php(70): CodeIgniter\Model->update()
+#4 /app/myapp/system/CodeIgniter.php(832): App\Controllers\ConciertoCrud->editar02Continuar()
+#5 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
