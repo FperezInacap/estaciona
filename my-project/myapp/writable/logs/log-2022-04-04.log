@@ -1,0 +1,24 @@
+CRITICAL - 2022-04-04 22:30:41 --> mysqli_connect(): (HY000/2002): Connection refused
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/base/reserva.php(18): mysqli_connect()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/NavegarBaseController.php(8): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\NavegarBaseController->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-04 22:30:45 --> mysqli_connect(): (HY000/2002): Connection refused
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/base/reserva.php(18): mysqli_connect()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/NavegarBaseController.php(8): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\NavegarBaseController->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
