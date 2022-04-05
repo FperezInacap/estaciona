@@ -26,7 +26,7 @@ $routes->setAutoRoute(true);
 
 // Ejemplo base
 
-$routes->get('base-lista', 'NavegarBaseController::index');
+$routes->get('base-reserva', 'NavegarBaseController::index');
 $routes->get('base-ver', 'NavegarBaseController::ver');
 $routes->get('base-editar', 'NavegarBaseController::editar01Formulario');
 $routes->get('base-editar-continuar', 'NavegarBaseController::editar02Continuar');

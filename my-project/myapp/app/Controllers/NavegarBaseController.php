@@ -5,7 +5,7 @@ use CodeIgniter\Controller;
 
 class NavegarBaseController extends Controller{
     public function index(){
-        return view('base/lista');
+        return view('base/reserva');
     }
 
     public function ver(){
