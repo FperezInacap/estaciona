@@ -1,4 +1,4 @@
-CREATE TABLE bitnami_myapp.usuarios (
+CREATE TABLE estaciona.usuarios (
 	usuario_id INT auto_increment NOT NULL,
 	usuario_correo varchar(100) NOT NULL,
 	usuario_nombre_completo varchar(300) NOT NULL,

@@ -292,3 +292,37 @@ CRITICAL - 2022-04-06 21:41:29 --> Call to a member function getResult() on bool
 #5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
 #6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+ERROR - 2022-04-06 21:43:58 --> Table 'estaciona.usuarios' doesn't exist
+CRITICAL - 2022-04-06 21:43:58 --> Call to a member function getResult() on bool
+#0 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#1 /app/myapp/app/Models/UsuarioModel.php(31): CodeIgniter\BaseModel->findAll()
+#2 /app/myapp/app/Controllers/LoginLogOutController.php(21): App\Models\UsuarioModel->todos()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login01Formulario()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-06 21:46:50 --> mysqli_connect(): (HY000/2002): Connection refused
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/base/lista.php(18): mysqli_connect()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/NavegarBaseController.php(8): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\NavegarBaseController->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-06 21:54:44 --> mysqli_connect(): (HY000/2002): Connection refused
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/base/lista.php(18): mysqli_connect()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/NavegarBaseController.php(8): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\NavegarBaseController->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
