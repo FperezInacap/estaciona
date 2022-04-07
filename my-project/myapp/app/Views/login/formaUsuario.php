@@ -17,6 +17,23 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
+<div class="d-flex justify-content-end">
+    <?php if(isset($_SESSION['USR'])) {
+      
+      $usr =   $_SESSION['USR'];
+    ?>
+    <p>
+        <b><?php echo $usr->nombre_completo?></b>
+        <a href="<?php echo site_url('/login-logout/')?>">LogOut</a>
+    </p>
+    <?php }else{ ?>
+    <p>
+        <a href="<?php echo site_url('/login-login/')?>">LogIn</a>
+    </p>
+    <?php } ?>
+
+</div>
+
 <div class="container mt-4">
 
     <?php

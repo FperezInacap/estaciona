@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'estaciona_mariadb_1',
         'username' => 'tesis',
         'password' => 't12345',
-        'database' => 'bitnami_myapp',
+        'database' => 'estaciona',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

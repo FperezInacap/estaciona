@@ -1,0 +1,46 @@
+CRITICAL - 2022-04-05 00:01:26 --> Call to undefined function App\Controllers\index()
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-05 00:09:19 --> Too few arguments to function App\Controllers\LoginLogOutController::login02Validar(), 0 passed in /app/myapp/system/CodeIgniter.php on line 832 and exactly 1 expected
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-05 00:11:05 --> Too few arguments to function App\Controllers\LoginLogOutController::login02Validar(), 0 passed in /app/myapp/system/CodeIgniter.php on line 832 and exactly 1 expected
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-05 00:11:47 --> Return value of App\Models\UsuarioModel::unUsuario() must be an instance of App\Models\UsuarioEntity, instance of App\Entities\UsuarioEntity returned
+#0 /app/myapp/app/Controllers/LoginLogOutController.php(40): App\Models\UsuarioModel->unUsuario()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-05 00:13:01 --> Return value of App\Models\UsuarioModel::unUsuario() must be an instance of App\Models\UsuarioEntity, instance of App\Entities\UsuarioEntity returned
+#0 /app/myapp/app/Controllers/LoginLogOutController.php(40): App\Models\UsuarioModel->unUsuario()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-05 00:15:22 --> Return value of App\Models\UsuarioModel::unUsuario() must be an instance of App\Models\UsuarioEntity, instance of App\Entities\UsuarioEntity returned
+#0 /app/myapp/app/Controllers/LoginLogOutController.php(40): App\Models\UsuarioModel->unUsuario()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-05 00:16:56 --> Return value of App\Models\UsuarioModel::unUsuario() must be an instance of App\Models\UsuarioEntity, instance of App\Entities\UsuarioEntity returned
+#0 /app/myapp/app/Controllers/LoginLogOutController.php(40): App\Models\UsuarioModel->unUsuario()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

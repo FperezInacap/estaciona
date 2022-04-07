@@ -26,7 +26,7 @@ $routes->setAutoRoute(true);
 
 // Ejemplo base
 
-$routes->get('base-reserva', 'NavegarBaseController::index');
+$routes->get('base-lista', 'NavegarBaseController::index');
 $routes->get('base-ver', 'NavegarBaseController::ver');
 $routes->get('base-editar', 'NavegarBaseController::editar01Formulario');
 $routes->get('base-editar-continuar', 'NavegarBaseController::editar02Continuar');
@@ -51,6 +51,17 @@ $routes->post('concierto-elimnar-continuar', 'ConciertoCrud::eliminar02Continuar
 //
 $routes->add('concierto-cancelar', 'ConciertoCrud::cancelar');
 //
+
+
+// DEMO LOGIN
+//
+$routes->add('login', 'LoginLogOutController::index');
+$routes->add('login-login', 'LoginLogOutController::login01Formulario');
+$routes->add('login-login01Validar/(:num)', 'LoginLogOutController::login02Validar/$1');
+$routes->add('login-logout', 'LoginLogOutController::logout');
+//
+
+
 
 /*
  * --------------------------------------------------------------------
