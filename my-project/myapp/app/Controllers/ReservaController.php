@@ -8,19 +8,33 @@ use App\Entities\Reserva;
 //
 class ReservaController extends Controller
 {
+//public function index(){
+    // Obtenemos la clase del Model que controla los conciertos
+    //$mod = new ReservaModel();
+    // Buscamos los conciertos
+    //$reservas = $mod->todEs();
+    // UN EJEMPLO PARA MASA ADELANTE
+    //$conciertos = $mod->soloConA();
+    
+    // Ponemos en la 'data transiente' la data que queremos mostrar
+    //$data['registros'] = $reservas;
+    // Vamos a la vista ... pero con los datos!!!
+   // return view('reserva/lista',$data);
+//}
 public function index(){
     // Obtenemos la clase del Model que controla los conciertos
     $mod = new ReservaModel();
     // Buscamos los conciertos
-    $reservas = $mod->todEs();
+    //$reservas = $mod->todEs();
     // UN EJEMPLO PARA MASA ADELANTE
-    //$conciertos = $mod->soloConA();
+    $reservas = $mod->soloConA();
     
     // Ponemos en la 'data transiente' la data que queremos mostrar
     $data['registros'] = $reservas;
     // Vamos a la vista ... pero con los datos!!!
     return view('reserva/lista',$data);
 }
+
 
 private function recuperaReserva($unId){
     // Obtenemos la clase del Model que controla los conciertos

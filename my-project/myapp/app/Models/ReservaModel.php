@@ -66,9 +66,9 @@ class ReservaModel extends Model
 
     public function soloConA(){
         $b = $this->builder();
-        $b->like('concierto_nombre','A'); // esto es concierto_nombre like '%A%'
-        $b->orderBy('concierto_nombre', 'ASC');
+        $b->where('estado','0'); // esto es concierto_nombre like '%A%'
+        $b->orderBy('estacionamiento_codigo', 'ASC');
         $consulta = $b->get();
-        return $consulta->getCustomResultObject('App\Entities\Concierto');
+        return $consulta->getCustomResultObject('App\Entities\Reserva');
     }
 }
