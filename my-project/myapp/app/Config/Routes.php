@@ -90,3 +90,5 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 $routes->get('reserva-lista', 'ReservaController::index');
+$routes->get('reserva-tarifaMinuto', 'TarifaMinutoController::index');
+$routes->get('reserva-tarifaHora', 'TarifaHoraController::index');
