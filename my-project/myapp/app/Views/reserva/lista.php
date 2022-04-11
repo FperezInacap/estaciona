@@ -40,7 +40,7 @@
           <tr>
             <td align=center><?php echo $reg->nombre; ?></td>
             <td align=center><a href="<?php echo site_url('/reserva-tarifaMinuto/'.$reg->id);?>" class="btn btn-info btn-sm"><?php echo $reg->tarm; ?></a>
-            <td align=center><a href="<?php echo site_url('/concierto-ver/'.$reg->id);?>" class="btn btn-info btn-sm"><?php echo $reg->tard; ?></a>
+            <td align=center><a href="<?php echo site_url('/reserva-tarifaDia/'.$reg->id);?>" class="btn btn-info btn-sm"><?php echo $reg->tard; ?></a>
             <td align=center><?php echo $reg->estado; ?></td>
              </tr>
          <?php endforeach; ?>

@@ -91,4 +91,5 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 }
 $routes->get('reserva-lista', 'ReservaController::index');
 $routes->get('reserva-tarifaMinuto/(:num)', 'TarifaMinutoController::ver/$1');
+$routes->get('reserva-tarifaDia/(:num)', 'TarifaDiaController::ver/$1');
 $routes->get('reserva-tarifaHora', 'TarifaHoraController::index');
