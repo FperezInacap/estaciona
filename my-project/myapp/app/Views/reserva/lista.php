@@ -2,15 +2,17 @@
 
 <?= $this->section('contenido') ?>
 
-<?php if($registros): ?>
+<div align=center>
+  <?php if($registros): ?>
           <?php foreach($registros as $reg): ?>
           <tr>
-            <td><?php echo $reg->alias; ?></td>
+            <td><h4><?php echo $reg->alias; ?></h4></td>
              </tr>
          <?php endforeach; ?>
-         <?php endif; ?>
+         <?php endif; ?></div>
 
-         <h5 align=center>Tipo de Reserva</h5>
+
+         <h6 align=center>Tipo de Reserva</h6>
 
 <div class="mt-3">
      <table class="table table-bordered" id="users-list">

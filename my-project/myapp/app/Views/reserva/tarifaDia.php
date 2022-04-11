@@ -15,7 +15,7 @@
 		<?php echo($reserva->tard); ?>	 
 	  </div>
       <div class="form-group" align=center>
-        <label for="">Selecciona el dia</label>
+        <label for="">Dia de reserva</label>
         <input type="date" name="dia_reserva" step="1" min="<?php echo date("Y-m-d");?>" max="<?php echo date("Y-m-d");?>" value="<?php echo date("Y-m-d");?>">
       </div>
       <div class="form-group" align=center>
