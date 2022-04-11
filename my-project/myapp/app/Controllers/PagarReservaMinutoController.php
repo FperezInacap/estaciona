@@ -6,7 +6,7 @@ use CodeIgniter\Controller;
 use App\Models\ReservaModel;
 use App\Entities\Reserva;
 //
-class PagaReservaController extends Controller
+class PagaReservaMinutoController extends Controller
 {
 //public function index(){
     // Obtenemos la clase del Model que controla los conciertos
@@ -32,7 +32,7 @@ public function index(){
     // Ponemos en la 'data transiente' la data que queremos mostrar
     $data['registros'] = $reservas;
     // Vamos a la vista ... pero con los datos!!!
-    return view('reserva/pagaReserva',$data);
+    return view('reserva/pagaReservaMinuto',$data);
 }
 
 
@@ -50,7 +50,7 @@ public function ver($id){
     // 
     $data = $this->recuperaReserva($id);
     //Vamos a la vista
-    return view('reserva/pagaReserva',$data);
+    return view('reserva/pagaReservaMinuto',$data);
 }
 
 public function agregar01Formulario(){
