@@ -6,7 +6,7 @@ use CodeIgniter\Controller;
 use App\Models\ReservaModel;
 use App\Entities\Reserva;
 //
-class tarifaMinutoController extends Controller
+class TarifaMinutoController extends Controller
 {
 //public function index(){
     // Obtenemos la clase del Model que controla los conciertos
@@ -50,7 +50,7 @@ public function ver($id){
     // 
     $data = $this->recuperaReserva($id);
     //Vamos a la vista
-    return view('reserva/ver',$data);
+    return view('reserva/tarifaMinuto',$data);
 }
 
 public function agregar01Formulario(){
