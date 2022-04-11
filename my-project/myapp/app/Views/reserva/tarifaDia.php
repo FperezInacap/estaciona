@@ -2,6 +2,9 @@
 
 <?= $this->section('contenido') ?>
 	
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
 
 
   <div class="container mt-5">
@@ -16,12 +19,14 @@
 	  </div>
       <div class="form-group" align=center>
         <label for="">Dia de reserva</label>
-        <input type="date" name="dia_reserva" step="1" min="<?php echo date("Y-m-d");?>" max="<?php echo date("Y-m-d");?>" value="<?php echo date("Y-m-d");?>">
-      </div>
-      <div class="form-group" align=center>
-		<a href="<?php echo site_url('/concierto-editar/'.$reserva->id);?>" class="btn btn-primary btn-sm">Pagar</a>
+        <input id="fechaReserva" type="date" name="diaReserva" step="1" min="<?php echo date("Y-m-d");?>" max="<?php echo date("Y-m-d");?>" value="<?php echo date("Y-m-d");?>">
+        
+    </div>
+        <div class="form-group" align=center>
+      
+      <a href="<?php echo site_url('/reserva-pagaReserva/'.$reserva->id);?>" onclick="myFunction()" class="btn btn-primary btn-sm">Reservar</a>
 		<a href="<?php echo site_url('/reserva-lista/');?>" class="btn btn-secondary btn-sm">Volver</a>
-	  </div>
+       </div>
       
 	  <?php else :?>
 	  <div class="form-group">
@@ -29,4 +34,12 @@
 	  </div>	  
 	  <?php endif; ?>
 
+      
+<script>
+
+function myFunction() {
+    var fecha = document.getElementById("fechaReserva").value;
+    document.getElementById("demo").innerHTML = fecha;
+}
+</script>
 <?= $this->endSection() ?>
