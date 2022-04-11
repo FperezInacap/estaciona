@@ -1,7 +1,9 @@
 <?= $this->extend('formaStandar') ?>
 
 <?= $this->section('contenido') ?>
- 
+	
+
+
   <div class="container mt-5">
   	<?php if($reserva): ?>
       <div class="form-group" align=center>
@@ -13,10 +15,14 @@
 		<?php echo($reserva->tard); ?>	 
 	  </div>
       <div class="form-group" align=center>
-		<a href="<?php echo site_url('/concierto-editar/'.$reserva->id);?>" class="btn btn-primary btn-sm">Editar</a>
-		<a href="<?php echo site_url('/concierto-eliminar/'.$reserva->id);?>" class="btn btn-danger btn-sm">Borrar</a>
-		<a href="<?php echo site_url('/concierto-cancelar/');?>" class="btn btn-secondary btn-sm">Volver</a>
+        <label for="">Selecciona el dia</label>
+        <input type="date" name="dia_reserva" step="1" min="<?php echo date("Y-m-d");?>" max="<?php echo date("Y-m-d");?>" value="<?php echo date("Y-m-d");?>">
+      </div>
+      <div class="form-group" align=center>
+		<a href="<?php echo site_url('/concierto-editar/'.$reserva->id);?>" class="btn btn-primary btn-sm">Pagar</a>
+		<a href="<?php echo site_url('/reserva-lista/');?>" class="btn btn-secondary btn-sm">Volver</a>
 	  </div>
+      
 	  <?php else :?>
 	  <div class="form-group">
 	  <a href="<?php echo site_url('/concierto-cancelar/');?>" class="btn btn-secondary btn-sm">Volver</a>
