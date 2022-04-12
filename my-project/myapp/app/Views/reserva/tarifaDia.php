@@ -24,7 +24,7 @@
     </div>
         <div class="form-group" align=center>
       
-      <a href="<?php echo site_url('/reserva-pagaReservaDia/'.$reserva->id);?>" onclick="myFunction()" class="btn btn-primary btn-sm">Reservar</a>
+      <a href="<?php echo site_url('/reserva-pagarReservaDia/'.$reserva->id);?>" onclick="myFunction()" class="btn btn-primary btn-sm">Reservar</a>
 		<a href="<?php echo site_url('/reserva-lista/');?>" class="btn btn-secondary btn-sm">Volver</a>
        </div>
       

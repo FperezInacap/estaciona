@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-<h2 align=center> Estaciona</h2>
+
 <script
   src="https://code.jquery.com/jquery-3.6.0.slim.js"
   integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
@@ -36,7 +36,7 @@
     <?php } ?>
 
 </div>
-
+<h2 align=center> Estaciona</h2>
 <div class="container mt-4">
 
     <?php

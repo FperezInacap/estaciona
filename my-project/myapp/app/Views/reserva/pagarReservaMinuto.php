@@ -13,10 +13,15 @@
       </div>
       <div class="form-group" align=center>
         <label >Tarifa por dia:</label>
-		<?php echo($reserva->tard); ?>	 
+		<?php echo($reserva->tarm); ?>	 
 	  </div>
       <div class="form-group" align=center>
         <label for="">Dia de reserva</label>
+        <?php echo date("d-m-Y");?>
+        
+    </div>
+    <div class="form-group" align=center>
+        <label for="">Hora de la reserva</label>
         <?php echo date("d-m-Y");?>
         
     </div>
