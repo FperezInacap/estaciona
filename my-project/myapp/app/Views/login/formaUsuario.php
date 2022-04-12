@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
+<h2 align=center> Estaciona</h2>
 <script
   src="https://code.jquery.com/jquery-3.6.0.slim.js"
   integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
@@ -18,7 +19,9 @@
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
 <div class="d-flex justify-content-end">
-    <?php if(isset($_SESSION['USR'])) {
+    <?php 
+    
+    if(isset($_SESSION['USR'])) {
       
       $usr =   $_SESSION['USR'];
     ?>

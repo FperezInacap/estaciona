@@ -98,3 +98,53 @@ CRITICAL - 2022-04-11 15:55:03 --> Undefined variable: mindate
 #7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
 #8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-04-11 19:32:02 --> session_start(): A session had already been started - ignoring
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/login/formausuario.php(23): session_start()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/View/View.php(226): CodeIgniter\View\View->render()
+#5 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#6 /app/myapp/app/Controllers/LoginLogOutController.php(11): view()
+#7 /app/myapp/app/Controllers/LoginLogOutController.php(45): App\Controllers\LoginLogOutController->index()
+#8 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#9 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-11 19:41:54 --> session_start(): A session had already been started - ignoring
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/TarifaMinutoController.php(42): session_start()
+#2 /app/myapp/app/Controllers/TarifaMinutoController.php(54): App\Controllers\TarifaMinutoController->recuperaReserva()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\TarifaMinutoController->ver()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 19:42:42 --> session_start(): A session had already been started - ignoring
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/TarifaMinutoController.php(42): session_start()
+#2 /app/myapp/app/Controllers/TarifaMinutoController.php(54): App\Controllers\TarifaMinutoController->recuperaReserva()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\TarifaMinutoController->ver()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 19:43:22 --> session_start(): A session had already been started - ignoring
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/TarifaDiaController.php(42): session_start()
+#2 /app/myapp/app/Controllers/TarifaDiaController.php(54): App\Controllers\TarifaDiaController->recuperaReserva()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\TarifaDiaController->ver()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-11 19:45:36 --> session_start(): A session had already been started - ignoring
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/PagaReservaDiaController.php(42): session_start()
+#2 /app/myapp/app/Controllers/PagaReservaDiaController.php(54): App\Controllers\PagaReservaDiaController->recuperaReserva()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagaReservaDiaController->ver()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -22,6 +22,8 @@ class ReservaController extends Controller
    // return view('reserva/lista',$data);
 //}
 public function index(){
+    //
+    session_start();
     // Obtenemos la clase del Model que controla los conciertos
     $mod = new ReservaModel();
     // Buscamos los conciertos
@@ -37,6 +39,7 @@ public function index(){
 
 
 private function recuperaReserva($unId){
+    
     // Obtenemos la clase del Model que controla los conciertos
     $mod = new ReservaModel();
     // Buscamos el Concierto por la PK
@@ -47,7 +50,8 @@ private function recuperaReserva($unId){
 }
 
 public function ver($id){
-    // 
+    session_start();
+        // 
     $data = $this->recuperaReserva($id);
     //Vamos a la vista
     return view('reserva/ver',$data);

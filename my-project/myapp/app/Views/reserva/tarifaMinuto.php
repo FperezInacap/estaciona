@@ -1,4 +1,4 @@
-<?= $this->extend('formaStandar') ?>
+<?= $this->extend('/login/formausuario') ?>
 
 <?= $this->section('contenido') ?>
   <div class="container mt-5">

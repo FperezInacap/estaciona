@@ -23,6 +23,7 @@ class TarifaMinutoController extends Controller
 //}
 public function index(){
     // Obtenemos la clase del Model que controla los conciertos
+    session_start();
     $mod = new ReservaModel();
     // Buscamos los conciertos
     //$reservas = $mod->todEs();
@@ -38,6 +39,7 @@ public function index(){
 
 private function recuperaReserva($unId){
     // Obtenemos la clase del Model que controla los conciertos
+    
     $mod = new ReservaModel();
     // Buscamos el Concierto por la PK
     $reserva = $mod->find($unId);
@@ -47,6 +49,7 @@ private function recuperaReserva($unId){
 }
 
 public function ver($id){
+    session_start();
     // 
     $data = $this->recuperaReserva($id);
     //Vamos a la vista
