@@ -95,3 +95,4 @@ $routes->get('reserva-tarifaDia/(:num)', 'TarifaDiaController::ver/$1');
 $routes->get('reserva-pagarReservaDia/(:num)', 'PagarReservaDiaController::ver/$1');
 $routes->get('reserva-pagarReservaMinuto/(:num)', 'PagarReservaMinutoController::ver/$1');
 $routes->get('reserva-consultarEstacionamiento', 'ConsultarEstacionamientoController::index');
+$routes->get('reserva-buscarEstacionamiento', 'BuscarEstacionamientoController::index');
