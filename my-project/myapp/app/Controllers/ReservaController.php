@@ -118,16 +118,7 @@ public function eliminar02Continuar(){
 
 
 
-public function hora(){
-    session_start();
-    $msg= "";
-    $name= $this->request->getPost("hora");
-    if (isset($name)) {
-        $msg ="$name";
-    } 
-return view('reserva/pagarReservaMinuto',['msg' => $msg]);
 
-}  
 
     
 }

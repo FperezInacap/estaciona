@@ -2,7 +2,7 @@
 namespace App\Models;
 use CodeIgniter\Model;
 use App\Entities\Reserva;
-class PagaReservaDiaModel extends Model
+class PagarReservaMinutoModel extends Model
 {
     protected $table = 'reservas';
     protected $primaryKey = 'estacionamiento_id';
