@@ -14,6 +14,7 @@ class Reserva extends Entity
         "tard" => "tarifa_dia",
         "estado" => "estado",
         "alias" => "alias_estacionamiento",
+        "dir" => "direccion",
     ];
 
     protected $casts   = [];

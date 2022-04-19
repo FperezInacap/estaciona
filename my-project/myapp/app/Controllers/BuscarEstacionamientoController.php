@@ -3,8 +3,8 @@ namespace App\Controllers;
 //
 use CodeIgniter\Controller;
 //
-use App\Models\ReservaModel;
-use App\Entities\Reserva;
+use App\Models\BuscarEstacionamientoModel;
+use App\Entities\Estacionamientos;
 //
 class BuscarEstacionamientoController extends Controller
 {
@@ -25,7 +25,7 @@ public function index(){
     //
     session_start();
     // Obtenemos la clase del Model que controla los conciertos
-    $mod = new ReservaModel();
+    $mod = new BuscarEstacionamientoModel();
     // Buscamos los conciertos
     //$reservas = $mod->todEs();
     // UN EJEMPLO PARA MASA ADELANTE
@@ -41,7 +41,7 @@ public function index(){
 private function recuperaReserva($unId){
     
     // Obtenemos la clase del Model que controla los conciertos
-    $mod = new ReservaModel();
+    $mod = new BuscarEstacionamientoModel();
     // Buscamos el Concierto por la PK
     $reserva = $mod->find($unId);
     // Dejamos el concierto la 'data transiente'
@@ -63,7 +63,7 @@ public function agregar01Formulario(){
 
 public function agregar02Continuar(){
     // Recuperamos los datos desde el formulario (porque se enviaron por un POST y Request)
-    $unaReserva = new Reserva();
+    $unaReserva = new BuscarEstacionamiento();
     $unaReserva->nombre =  $this->request->getVar('concierto');
     $unaReserva->ubicacion =  $this->request->getVar('ubicacion');
     // Obtenemos la clase del Model que controla los conciertos

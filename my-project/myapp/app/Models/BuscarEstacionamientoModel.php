@@ -1,16 +1,16 @@
 <?php 
 namespace App\Models;
 use CodeIgniter\Model;
-use App\Entities\Reserva;
+use App\Entities\Estacionamientos;
 class BuscarEstacionamientoModel extends Model
 {
-    protected $table = 'reservas';
+    protected $table = 'estacionamientos';
     protected $primaryKey = 'estacionamiento_id';
     
-    protected $allowedFields = ['estacionamiento_codigo','tarifa_minuto', 'tarifa_dia', 'estado','alias_estacionamiento'];
+    protected $allowedFields = ['alias_estacionamiento','direccion_estacionamiento', 'precio_medio_minuto', 'precio_medio_dia','ciudad'];
 
     // Tipo de dato a devolver
-    protected $returnType = 'App\Entities\Reserva'; 
+    protected $returnType = 'App\Entities\Estacionamientos'; 
 
     public function  eliminar(Concierto $unConcierto){
         $this->delete($unConcierto->id);
@@ -66,9 +66,9 @@ class BuscarEstacionamientoModel extends Model
 
     public function soloConA(){
         $b = $this->builder();
-        $b->where('estado','0'); // esto es concierto_nombre like '%A%'
-        $b->orderBy('estacionamiento_codigo', 'ASC');
+       /* $b->where('ciudad','santiago'); // esto es concierto_nombre like '%A%'*/
+        $b->orderBy('estacionamiento_id', 'ASC');
         $consulta = $b->get();
-        return $consulta->getCustomResultObject('App\Entities\Reserva');
+        return $consulta->getCustomResultObject('App\Entities\Estacionamientos');
     }
 }

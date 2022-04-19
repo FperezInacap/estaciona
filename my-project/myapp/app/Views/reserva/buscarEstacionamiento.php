@@ -9,9 +9,10 @@
        <thead>
           <tr>
              <th >Estacionamiento</th>
-             <th >Tarifa por minuto</th>
-             <th >Tarifa por dia</th>
-             <th >Estado</th>
+             <th >Tarifa Promedio Minuto</th>
+             <th >Tarifa promedio dia</th>
+             <th >Direccion</th>
+             <th >Ciudad</th>
              
           </tr>
        </thead>
@@ -30,10 +31,11 @@
           <?php if($registros): ?>
           <?php foreach($registros as $reg): ?>
           <tr>
-            <td align=center><?php echo $reg->alias; ?></td>
-            <td align=center><a href="<?php echo site_url('/reserva-tarifaMinuto/'.$reg->id);?>" class="btn btn-info btn-sm"><?php echo $reg->tarm; ?></a>
-            <td align=center><a href="<?php echo site_url('/reserva-tarifaDia/'.$reg->id);?>" class="btn btn-info btn-sm"><?php echo $reg->tard; ?></a>
-            <td align=center><?php echo $reg->estado; ?></td>
+            <td align=center><a href="<?php echo site_url('/reserva-tarifaMinuto/'.$reg->alias);?>" class="btn btn-info btn-sm"><?php echo $reg->alias; ?></a>
+            <td align=center><?php echo $reg->pmeddia;?></td>
+            <td align=center><?php echo $reg->pmedmin;?></td>
+            <td align=center><?php echo $reg->direst;?></td>
+            <td align=center><?php echo $reg->ciudad;?></td>
              </tr>
          <?php endforeach; ?>
          <?php endif; ?>
