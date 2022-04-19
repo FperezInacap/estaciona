@@ -42,6 +42,9 @@
        </tbody>
      </table>
   </div>
+
+  <div align="right"> <a href="<?php echo site_url('/home/');?>" class="btn btn-secondary btn-sm">Volver</a></div>
+  
  
 <script>
     $(document).ready( function () {
