@@ -20,7 +20,7 @@
         <form action="<?= site_url('/PagarReservaMinutoController/hora') ?>" method=post>
             <input type='time'  required='required' name='hora' value='00:00:00' step='1' >
             <br><br><input type='submit'  class="btn btn-primary btn-sm" value='Pagar' onclick="<?= site_url('/PagarReservaMinutoController/hora') ?>">
-            <a href="<?php echo site_url('/reserva-pagarReservaMinuto/'.$reserva->id);?>"  onclick="myFunction()"class="btn btn-secondary btn-sm">Viculo</a>
+            <a href="<?php echo site_url('/reserva-pagarReservaMinuto/'.$reserva->id);?>"  onclick="myFunction()"class="btn btn-secondary btn-sm">Vinculo</a>
             <a href="<?php echo site_url('/reserva-lista/');?>" class="btn btn-secondary btn-sm">Volver</a>
         </form>
         

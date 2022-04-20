@@ -32,6 +32,6 @@
 	  </div>	  
 	  <?php endif; ?>
 
-
+    <?//=$msg?>
 <?= $this->endSection() ?>
  
