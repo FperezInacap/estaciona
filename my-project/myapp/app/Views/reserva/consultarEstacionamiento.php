@@ -6,12 +6,12 @@
 <h6 align=center>Consulta Estacionamiento</h6>
 
 <div class="mt-3" align="center">
-  <select id="cod_estacionamiento" name="codigo">
+  <select id="cod_estacionamiento" name="cod_estacionamiento">
 
 
     <?php if($registros): ?>
     <?php foreach($registros as $reg): ?>
-    <option value=""><?php echo $reg->nombre; ?></option>
+    <option value="<?php echo$reg->id ?>"><?php echo $reg->nombre; ?></option>
     <?php endforeach; ?>
     <?php endif; ?>
 

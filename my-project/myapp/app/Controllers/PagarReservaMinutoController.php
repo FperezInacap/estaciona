@@ -48,10 +48,13 @@ private function recuperaReserva($unId){
     return $laData;
 }
 
-public function ver($id){
+public function hora(){
     session_start();
+    $id= $this->request->getPost("id");
     // 
+
     $data = $this->recuperaReserva($id);
+    
     //Vamos a la vista
     return view('reserva/pagarReservaMinuto',$data);
 }
@@ -114,15 +117,17 @@ public function eliminar02Continuar(){
  public function cancelar(){
     return $this->index();
  }
- public function hora(){
-    session_start();
-    $msg= "";
-    $name= $this->request->getPost("hora");
-    if (isset($name)) {
-        $msg ="$name";
-    } 
-return view('reserva/pagarReservaMinuto',['msg' => $msg]);
+ //public function hora(){
+   // session_start();
+    
+    //$msg= "";
+    
+    //$name= $this->request->getPost("hora");
+    //if (isset($name)) {
+        
+    //} 
+//return view('reserva/pagarReservaMinuto',['msg' => $msg],['reserva' => $reserva]);
 
-}  
+//}  
 
 }

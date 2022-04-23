@@ -1,0 +1,19 @@
+CRITICAL - 2022-04-20 11:04:16 --> syntax error, unexpected 'return' (T_RETURN)
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-20 11:05:06 --> Too few arguments to function App\Controllers\PagarReservaMinutoController::hora(), 0 passed in /app/myapp/system/CodeIgniter.php on line 832 and exactly 1 expected
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-20 11:06:48 --> Too few arguments to function App\Controllers\PagarReservaMinutoController::hora(), 0 passed in /app/myapp/system/CodeIgniter.php on line 832 and exactly 1 expected
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

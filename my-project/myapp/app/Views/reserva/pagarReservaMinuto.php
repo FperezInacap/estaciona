@@ -2,6 +2,7 @@
 
 <?= $this->section('contenido') ?>
 
+
 <div class="container mt-5">
   	<?php if($reserva): ?>
       <div class="form-group" align=center>
@@ -12,7 +13,7 @@
 		<?php echo($reserva->nombre); ?>	 
       </div>
       <div class="form-group" align=center>
-        <label >Tarifa por Minuto:</label>
+        <label >Tarifa por dia:</label>
 		<?php echo($reserva->tarm); ?>	 
 	  </div>
       <div class="form-group" align=center>
@@ -32,6 +33,8 @@
 	  </div>	  
 	  <?php endif; ?>
 
-    <?//=$msg?>
+
+
+ 
 <?= $this->endSection() ?>
  
