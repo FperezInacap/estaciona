@@ -349,3 +349,646 @@ CRITICAL - 2022-04-23 11:51:59 --> syntax error, unexpected '->' (T_OBJECT_OPERA
 #3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
 #4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+ERROR - 2022-04-23 13:34:46 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-04-23 13:34:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /app/myapp/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/myapp/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 /app/myapp/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/myapp/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 /app/myapp/app/Models/UsuarioModel.php(31): CodeIgniter\BaseModel->findAll()
+#5 /app/myapp/app/Controllers/LoginLogOutController.php(21): App\Models\UsuarioModel->todos()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login01Formulario()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-23 13:35:12 --> syntax error, unexpected '/'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 13:37:27 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(66): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:40:10 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(136): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora1()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:44:29 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:44:59 --> Argument 3 passed to view() must be of the type array, string given, called in /app/myapp/app/Controllers/PagarReservaMinutoController.php on line 65
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 13:45:29 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:46:17 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:48:32 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 13:49:07 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:49:35 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:49:51 --> Array to string conversion
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 13:53:20 --> Array to string conversion
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 13:53:40 --> Undefined variable: data
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:55:07 --> Undefined variable: data
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:55:19 --> Undefined variable: reserva
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 13:55:53 --> Undefined variable: reserva
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 13:56:24 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:56:58 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:57:37 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 13:58:01 --> Array to string conversion
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 13:58:55 --> Array to string conversion
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 14:01:32 --> Array to string conversion
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 14:04:50 --> Use of undefined constant hola - assumed 'hola' (this will throw an Error in a future version of PHP)
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 14:05:10 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 14:06:10 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 14:13:30 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:14:52 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:16:09 --> Call to a member function with() on string
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 16:18:10 --> Call to a member function with() on string
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 16:19:22 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:20:51 --> compact(): Undefined variable: hola
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): compact()
+#2 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#3 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 16:21:22 --> compact(): Undefined variable: 00:00:00
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): compact()
+#2 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#3 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 16:21:46 --> compact(): Undefined variable: 03:03:03
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): compact()
+#2 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#3 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 16:24:33 --> syntax error, unexpected 'msg' (T_STRING), expecting ')'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:25:44 --> compact(): Undefined variable: 02:02:04
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): compact()
+#2 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#3 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#4 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#5 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 16:27:39 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:28:16 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:28:30 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:29:00 --> syntax error, unexpected 'return' (T_RETURN), expecting ';'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:33:41 --> syntax error, unexpected 'return' (T_RETURN), expecting ';'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:34:31 --> syntax error, unexpected '}', expecting ';'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:35:37 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:35:58 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:36:34 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:36:47 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:36:53 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:37:34 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:38:26 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:38:53 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ';'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:39:16 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:43:32 --> Call to a member function with() on array
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 16:44:05 --> syntax error, unexpected ','
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:44:15 --> Call to a member function with() on array
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 16:50:12 --> Trying to get property 'with' of non-object
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:50:31 --> Trying to get property 'with' of non-object
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:51:50 --> Call to a member function with() on array
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 16:52:13 --> Call to a member function with() on array
+#0 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#1 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 16:53:11 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:53:36 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:54:03 --> syntax error, unexpected '$reserva' (T_VARIABLE), expecting ']'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:54:30 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:56:08 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:56:45 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:57:06 --> syntax error, unexpected ';', expecting ')'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 16:57:19 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 16:57:42 --> Undefined variable: reserva
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 17:02:08 --> Undefined variable: msg
+#0 /app/myapp/app/Views/reserva/pagarReservaMinuto.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#2 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#5 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#6 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-23 17:02:38 --> Object of class App\Entities\Reserva could not be converted to string
+#0 /app/myapp/system/View/View.php(210): include()
+#1 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#3 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#4 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#5 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 17:05:22 --> syntax error, unexpected ';', expecting ')'
+#0 /app/myapp/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /app/myapp/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /app/myapp/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 17:05:39 --> Argument 2 passed to view() must be of the type array, string given, called in /app/myapp/app/Controllers/PagarReservaMinutoController.php on line 65
+#0 /app/myapp/app/Controllers/PagarReservaMinutoController.php(65): view()
+#1 /app/myapp/system/CodeIgniter.php(832): App\Controllers\PagarReservaMinutoController->hora()
+#2 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

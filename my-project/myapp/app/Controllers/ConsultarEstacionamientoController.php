@@ -39,6 +39,8 @@ public function index(){
 
 
 private function recuperaReserva($unId){
+
+    $this->request->getPost("cod_estacionamiento");
     
     // Obtenemos la clase del Model que controla los conciertos
     $mod = new ReservaModel();

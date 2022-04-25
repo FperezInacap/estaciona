@@ -7,7 +7,7 @@ class UsuarioModel extends Model
     protected $table = 'usuarios';
     protected $primaryKey = 'usuario_id';
     
-    protected $allowedFields = ['usuario_nombre_completo', 'usuario_correo'];
+    protected $allowedFields = ['usuario_correo', 'usuario_clave'];
 
     // Tipo de dato a devolver
     protected $returnType = 'App\Entities\UsuarioEntity'; 
@@ -18,8 +18,8 @@ class UsuarioModel extends Model
 
     public function actualziar (UsuarioEntity $unUsuario){
         $parametros = [
-            'usuario_nombre_completo' => $unUsuario->nombre,
-            'usuario_correo' => $unUsuario->correo            
+            'usuario_correo' => $unUsuario->correo,
+            'usuario_clave' => $unUsuario->clave             
         ]
         ;
 
@@ -35,6 +35,16 @@ class UsuarioModel extends Model
         $unUsuario = $this->find($pk);
         error_log(gettype($unUsuario));
         return $unUsuario;
+    }
+
+    public function usuarioPorCorreo($unCorreo,$unaClave){
+        // Instancia de builder SQL
+        $unBuilder = $this->builder();
+        // Que el correo sea el valor que quiero
+        $unBuilder->where('usuario_correo',$unCorreo); //
+        $unBuilder->where('usuario_clave',$unaClave); 
+        $consulta = $unBuilder->get();
+        return $consulta->getCustomResultObject('App\Entities\UsuarioEntity');
     }
 
 }

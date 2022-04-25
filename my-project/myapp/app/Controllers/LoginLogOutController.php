@@ -18,8 +18,8 @@ class LoginLogOutController extends BaseController
         // Por mientras
         // ** Lista de usaurios desde la BD
         $model = new UsuarioModel();
-        $usuarios = $model->todos();
-        $data['registros'] = $usuarios;
+       $usuarios = $model->todos();
+       $data['registros'] = $usuarios;
         return view('login/login01Formulario',$data);
     }
 
@@ -30,6 +30,8 @@ class LoginLogOutController extends BaseController
         // ** Buscar el usr en la bd (existe?)
         // ** Valdiar que la passw del usr esta ok 
         // ==> Guardar en la sesion
+        $unCorreo = $_POST["el_correo"];
+        $unaClave = $_POST["la_clave"];
 
         // Por mientras
         // buscamos el usr por PK
@@ -37,12 +39,26 @@ class LoginLogOutController extends BaseController
         // Dejamos el USR en Session ()        
         // ** Buscamos el usuario
         $model = new UsuarioModel();
-        $usuario = $model->unUsuario($pk);
+        $usuario = $model->usuarioPorCorreo($unCorreo,$unaClave);
+        if (sizeof($usuario) ==1 ) {
+            session_start();
+            $_SESSION['USR']= $usuario[0];
+         // **   $_SESSION['USR']= $clave[0];
+            return $this->index();
+    
+        }
+        else{
+           
+            echo "Correo electrónico y/o contraseña inválidos.";
+            return $this->login01Formulario();  
+            
+        }
+        
         // Lo poenmos en sesion
-        session_start();
-        $_SESSION['USR']= $usuario;
+        //session_start();
+        //$_SESSION['USR']= $usuario;
         // Pal Home!!!
-        return $this->index();
+        //return $this->index();
     }
 
     public function logout(){

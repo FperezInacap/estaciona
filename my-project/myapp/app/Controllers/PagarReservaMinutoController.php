@@ -50,13 +50,20 @@ private function recuperaReserva($unId){
 
 public function hora(){
     session_start();
-    $id= $this->request->getPost("id");
+    $msg= "";
+    $name= $this->request->getPost("hora");
+    if (isset($name)) {
+      $msg= "$name";
+    } 
+   
+    $data= $this->request->getPost("id");
     // 
 
-    $data = $this->recuperaReserva($id);
+    $reserva = $this->recuperaReserva($data);
     
     //Vamos a la vista
-    return view('reserva/pagarReservaMinuto',$data);
+    return view('reserva/pagarReservaMinuto',['msg'=>$msg]);
+    
 }
 
 public function agregar01Formulario(){
@@ -117,17 +124,17 @@ public function eliminar02Continuar(){
  public function cancelar(){
     return $this->index();
  }
- //public function hora(){
-   // session_start();
+ public function hora1(){
+   session_start();
     
-    //$msg= "";
+   $msg= "";
     
-    //$name= $this->request->getPost("hora");
-    //if (isset($name)) {
-        
-    //} 
-//return view('reserva/pagarReservaMinuto',['msg' => $msg],['reserva' => $reserva]);
+   $name= $this->request->getPost("hora");
+   if (isset($name)) {
+    $msg= $name;  
+   } 
+return view('reserva/pagarReservaMinuto',['msg' => $msg]);
 
-//}  
+}  
 
 }

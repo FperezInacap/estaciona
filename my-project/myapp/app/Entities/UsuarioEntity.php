@@ -8,8 +8,8 @@ class UsuarioEntity extends Entity
 {
     protected $datamap = [
         "id" => "usuario_id",
-        "nombre_completo" => "usuario_nombre_completo",
         "correo" => "usuario_correo",
+        "clave" => "usuario_clave",
     ];
 
     protected $casts   = [];
