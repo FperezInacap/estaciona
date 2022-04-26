@@ -53,7 +53,7 @@ class LoginLogOutController extends BaseController
              $msg= "Correo electrónico y/o contraseña inválidos.";  
             }          
             
-            return $this->login01Formulario(['msg' => $msg]);  
+            return view('login/login01Formulario',['msg' => $msg]); 
             } 
         
         

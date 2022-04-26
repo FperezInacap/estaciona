@@ -16,14 +16,18 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
         
-        <?php $msg="hola"?>
-        <?php echo $msg?>
-      </div>
+       <br> 
+       <?php
+  if (isset($msg)){
+   echo "Correo electrónico y/o contraseña inválidos.";
+}else{
+   echo "";
+} 
+?>
+       </div>
            <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesion</button>
       <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
     </form>
   </div>
-
- 
 
   <?= $this->endSection() ?>
