@@ -48,11 +48,14 @@ class LoginLogOutController extends BaseController
     
         }
         else{
-           
-            echo "Correo electrónico y/o contraseña inválidos.";
-            return $this->login01Formulario();  
+            $msg= "";
+            if (isset($msg)) {
+             $msg= "Correo electrónico y/o contraseña inválidos.";  
+            }          
             
-        }
+            return $this->login01Formulario(['msg' => $msg]);  
+            } 
+        
         
         // Lo poenmos en sesion
         //session_start();
@@ -64,8 +67,8 @@ class LoginLogOutController extends BaseController
     public function logout(){
         // Sacamos el USR de la Session
 
-        //Pal Home
-        return $this->index();
+        //Pal Home  
+        return view('welcome_message');
     }
 
 }

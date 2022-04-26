@@ -26,13 +26,11 @@
       $usr =   $_SESSION['USR'];
     ?>
     <p>
-        <b><?php echo $usr->nombre_completo?></b>
+        <b><?php echo $usr->usuario_nombre_completo?></b>
         <a href="<?php echo site_url('/login-logout/')?>">LogOut</a>
     </p>
     <?php }else{ ?>
-    <p>
-        <a href="<?php echo site_url('/login-login/')?>">LogIn</a>
-    </p>
+    
     <?php } ?>
 
 </div>
