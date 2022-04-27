@@ -8,7 +8,7 @@
     ?>
     <p>
         <ul>
-         <li><a href="<?php echo site_url('/reserva-buscarEstacionamiento/') ?>">Buscar</a> </li>
+          <li><a href="<?php echo site_url('/reserva-consultarEstacionamiento/') ?>">Consultar</a> </li>
         </ul>
     </p>
     <?php }else{ ?>

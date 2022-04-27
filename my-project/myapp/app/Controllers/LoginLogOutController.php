@@ -11,6 +11,11 @@ class LoginLogOutController extends BaseController
         // Pal Home
         return view('login/index');
     }
+
+    public function index2(){
+        // Pal Home
+        return view('login/index2');
+    }
     public function login01Formulario()
     {
         // Como Debe funcionar
@@ -105,7 +110,7 @@ class LoginLogOutController extends BaseController
             session_start();
             $_SESSION['USR']= $usuario[0];
          // **   $_SESSION['USR']= $clave[0];
-            return $this->index();
+            return $this->index2();
     
         }
         else{
