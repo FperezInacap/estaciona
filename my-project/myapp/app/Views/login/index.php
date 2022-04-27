@@ -7,7 +7,7 @@
       $usr =   $_SESSION['USR'];
     ?>
     <img class="mb-4" src="\images\iconoestacionasmall.jpg" alt="" >
-    <a href="<?php echo site_url('/reserva-buscarEstacionamiento/') ?>" class="btn btn-lg btn-primary btn-block">Buscar</a>
+    <a href="<?php echo site_url('/reserva-buscarEstacionamientosPartners/') ?>" class="btn btn-lg btn-primary btn-block">Buscar</a>
     <a href="<?php echo site_url('/reserva-lista/') ?>" class="btn btn-lg btn-primary btn-block">Reservar</a>
     <?php }else{ ?>
     <p>

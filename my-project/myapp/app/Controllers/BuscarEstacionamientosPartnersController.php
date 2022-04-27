@@ -3,10 +3,10 @@ namespace App\Controllers;
 //
 use CodeIgniter\Controller;
 //
-use App\Models\BuscarEstacionamientoModel;
-use App\Entities\Estacionamientos;
+use App\Models\BuscarEstacionamientosPartnersModel;
+use App\Entities\EstacionamientosPartners;
 //
-class BuscarEstacionamientoController extends Controller
+class BuscarEstacionamientosPartnersController extends Controller
 {
 //public function index(){
     // Obtenemos la clase del Model que controla los conciertos
@@ -25,7 +25,7 @@ public function index(){
     //
     session_start();
     // Obtenemos la clase del Model que controla los conciertos
-    $mod = new BuscarEstacionamientoModel();
+    $mod = new BuscarEstacionamientosPartnersModel();
     // Buscamos los conciertos
     //$reservas = $mod->todEs();
     // UN EJEMPLO PARA MASA ADELANTE
@@ -34,14 +34,14 @@ public function index(){
     // Ponemos en la 'data transiente' la data que queremos mostrar
     $data['registros'] = $reservas;
     // Vamos a la vista ... pero con los datos!!!
-    return view('reserva/buscarEstacionamiento',$data);
+    return view('reserva/buscarEstacionamientosPartners',$data);
 }
 
 
 private function recuperaReserva($unId){
     
     // Obtenemos la clase del Model que controla los conciertos
-    $mod = new BuscarEstacionamientoModel();
+    $mod = new BuscarEstacionamientosPartnersModel();
     // Buscamos el Concierto por la PK
     $reserva = $mod->find($unId);
     // Dejamos el concierto la 'data transiente'
@@ -63,7 +63,7 @@ public function agregar01Formulario(){
 
 public function agregar02Continuar(){
     // Recuperamos los datos desde el formulario (porque se enviaron por un POST y Request)
-    $unaReserva = new BuscarEstacionamiento();
+    $unaReserva = new BuscarEstacionamientoPartners();
     $unaReserva->nombre =  $this->request->getVar('concierto');
     $unaReserva->ubicacion =  $this->request->getVar('ubicacion');
     // Obtenemos la clase del Model que controla los conciertos

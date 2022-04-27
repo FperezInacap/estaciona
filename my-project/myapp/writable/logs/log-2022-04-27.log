@@ -1,0 +1,9 @@
+CRITICAL - 2022-04-27 17:51:02 --> Invalid file: reserva/buscarEstacionamientosPartners.php
+#0 /app/myapp/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Controllers/BuscarEstacionamientosPartnersController.php(37): view()
+#3 /app/myapp/system/CodeIgniter.php(832): App\Controllers\BuscarEstacionamientosPartnersController->index()
+#4 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

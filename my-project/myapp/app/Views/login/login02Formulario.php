@@ -5,7 +5,7 @@
  
   <div class="container mt-4" align="center" style="width:28%">
  <form class="form-signin" method="post" id="add_create" name="add_create" action="<?= site_url('login-login02Validar/') ?>">
-      <img class="mb-4" src="\images\iconoestacionasmall.jpg" alt="" >
+      <img class="mb-4" src="\images\iconoestacionapartnersmall.jpg" alt="" >
       <h5 class="h5 mb-5 font-weight-normal">Favor ingresa tus datos</h5>
       <label for="inputEmail" class="sr-only">Correo Electrónico</label>
       <input type="email" name="el_correo" id="el_correo" class="form-control" placeholder="Email address" required="" autofocus="">

@@ -1,16 +1,16 @@
 <?php 
 namespace App\Models;
 use CodeIgniter\Model;
-use App\Entities\Estacionamientos;
-class BuscarEstacionamientoModel extends Model
+use App\Entities\EstacionamientosPartners;
+class BuscarEstacionamientosPartnersModel extends Model
 {
-    protected $table = 'estacionamientos';
+    protected $table = 'estacionamientos_partners';
     protected $primaryKey = 'estacionamiento_id';
     
     protected $allowedFields = ['alias_estacionamiento','direccion_estacionamiento', 'precio_medio_minuto', 'precio_medio_dia','ciudad'];
 
     // Tipo de dato a devolver
-    protected $returnType = 'App\Entities\Estacionamientos'; 
+    protected $returnType = 'App\Entities\EstacionamientosPartners'; 
 
     public function  eliminar(Concierto $unConcierto){
         $this->delete($unConcierto->id);
@@ -69,6 +69,6 @@ class BuscarEstacionamientoModel extends Model
        /* $b->where('ciudad','santiago'); // esto es concierto_nombre like '%A%'*/
         $b->orderBy('estacionamiento_id', 'ASC');
         $consulta = $b->get();
-        return $consulta->getCustomResultObject('App\Entities\Estacionamientos');
+        return $consulta->getCustomResultObject('App\Entities\EstacionamientosPartners');
     }
 }

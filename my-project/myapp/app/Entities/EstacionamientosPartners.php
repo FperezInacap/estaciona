@@ -4,7 +4,7 @@ namespace App\Entities;
 
 use CodeIgniter\Entity\Entity;
 
-class Estacionamientos extends Entity
+class EstacionamientosPartners extends Entity
 {
 
     protected $datamap = [

@@ -6,7 +6,7 @@
       
       $usr =   $_SESSION['USR'];
     ?>
-    <img class="mb-4" src="\images\iconoestacionasmall.jpg" alt="" >
+    <img class="mb-4" src="\images\iconoestacionapartnersmall.jpg" alt="" >
     <a href="<?php echo site_url('/reserva-consultarEstacionamiento/') ?>" class="btn btn-lg btn-primary btn-block">Consultar</a>
     <?php }else{ ?>
     <p>
