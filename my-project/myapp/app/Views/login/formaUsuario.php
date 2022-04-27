@@ -25,6 +25,7 @@
       
       $usr =   $_SESSION['USR'];
     ?>
+    
     <p>
         <b><?php echo $usr->usuario_nombre_completo?></b>
         <a href="<?php echo site_url('/login-logout/')?>">LogOut</a>
@@ -32,23 +33,7 @@
     <?php }else{ ?>
     
     <?php } ?>
-    <?php 
-    
-    if(isset($_SESSION['USR'])) {
-      
-      $usr =   $_SESSION['USR'];
-    ?>
-    <p>
-        <b><?php echo $usr->usuario_estacionamiento_nombre_completo?></b>
-        <a href="<?php echo site_url('/login-logout/')?>">LogOut</a>
-    </p>
-    <?php }else{ ?>
-    
-    <?php } ?>
-    
-
-</div>
-<h2 align=center> Estaciona</h2>
+       </div>
 <div class="container mt-4">
 
     <?php

@@ -1,16 +1,13 @@
-<?= $this->extend('/login/formausuario') ?>
+<?= $this->extend('/login/formausuario2') ?>
 <?= $this->section('contenido') ?>
 
-<div>
+<div class="container mt-4" align="center" style="width:30%">
     <?php if(isset($_SESSION['USR'])) {
       
       $usr =   $_SESSION['USR'];
     ?>
-    <p>
-        <ul>
-          <li><a href="<?php echo site_url('/reserva-consultarEstacionamiento/') ?>">Consultar</a> </li>
-        </ul>
-    </p>
+    <img class="mb-4" src="\images\iconoestacionasmall.jpg" alt="" >
+    <a href="<?php echo site_url('/reserva-consultarEstacionamiento/') ?>" class="btn btn-lg btn-primary btn-block">Consultar</a>
     <?php }else{ ?>
     <p>
         Sin Conexion

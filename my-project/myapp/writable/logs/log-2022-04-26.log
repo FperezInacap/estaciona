@@ -118,3 +118,35 @@ CRITICAL - 2022-04-26 19:27:34 --> syntax error, unexpected '}', expecting end o
 #6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
 #7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-04-26 20:24:37 --> chdir(): No such file or directory (errno 2)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/myapp/app/Views/welcome_message.php(10): chdir()
+#2 /app/myapp/system/View/View.php(210): include('/app/myapp/app/...')
+#3 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /app/myapp/app/Controllers/Home.php(9): view()
+#6 /app/myapp/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#7 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-26 21:55:29 --> syntax error, unexpected 'class' (T_CLASS), expecting ';' or ','
+#0 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Controllers/LoginLogOutController.php(12): view()
+#3 /app/myapp/app/Controllers/LoginLogOutController.php(53): App\Controllers\LoginLogOutController->index()
+#4 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#5 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-26 21:55:50 --> syntax error, unexpected 'class' (T_CLASS), expecting ';' or ','
+#0 /app/myapp/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/myapp/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /app/myapp/app/Controllers/LoginLogOutController.php(12): view()
+#3 /app/myapp/app/Controllers/LoginLogOutController.php(53): App\Controllers\LoginLogOutController->index()
+#4 /app/myapp/system/CodeIgniter.php(832): App\Controllers\LoginLogOutController->login02Validar()
+#5 /app/myapp/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 /app/myapp/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 /app/myapp/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
