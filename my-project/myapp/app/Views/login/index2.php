@@ -8,6 +8,7 @@
     ?>
     <img class="mb-4" src="\images\iconoestacionapartnersmall.jpg" alt="" >
     <a href="<?php echo site_url('/reserva-consultarEstacionamiento/') ?>" class="btn btn-lg btn-primary btn-block">Consultar</a>
+    <a href="<?php echo site_url('/reserva-publicarEstacionamiento/') ?>" class="btn btn-lg btn-primary btn-block">Publicar</a>
     <?php }else{ ?>
     <p>
         Sin Conexion

@@ -1,4 +1,4 @@
-<?= $this->extend('/login/formausuario') ?>
+<?= $this->extend('/login/formausuario2') ?>
 
 <?= $this->section('contenido') ?>
 
