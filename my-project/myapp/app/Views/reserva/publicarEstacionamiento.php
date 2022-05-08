@@ -6,7 +6,20 @@
 
  <h6 align=center>Publicar Estacionamiento</h6>
 <div class="container mt-4" align="center" style="width:28%">
- 
+<div class="mt-3" align="center">
+    <select id="cod_estacionamiento" name="cod_estacionamiento">
+
+
+      <?php if($registros2): ?>
+      <?php foreach($registros2 as $reg): ?>
+      <option value="<?php echo$reg->id ?>"><?php echo $reg->alias; ?></option>
+      <?php endforeach; ?>
+      <?php endif; ?>
+
+    </select>
+
+</div> 
+
   <div class="container mt-5">
     <form method="post" id="add_create" name="add_create" action="<?= site_url('/estacionamiento-agregar-continuar') ?>">
       <div class="form-group">

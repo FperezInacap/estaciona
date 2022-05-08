@@ -5,7 +5,7 @@ use App\Entities\EstacionamientosPartners;
 class BuscarEstacionamientosPartnersModel extends Model
 {
     protected $table = 'estacionamientos_partners';
-    protected $primaryKey = 'estacionamiento_id';
+    protected $primaryKey = 'estacionamientos_partners_id';
     
     protected $allowedFields = ['alias_estacionamiento','direccion_estacionamiento', 'precio_medio_minuto', 'precio_medio_dia','ciudad'];
 
@@ -67,7 +67,7 @@ class BuscarEstacionamientosPartnersModel extends Model
     public function soloConA(){
         $b = $this->builder();
        /* $b->where('ciudad','santiago'); // esto es concierto_nombre like '%A%'*/
-        $b->orderBy('estacionamiento_id', 'ASC');
+        $b->orderBy('estacionamientos_partners_id', 'ASC');
         $consulta = $b->get();
         return $consulta->getCustomResultObject('App\Entities\EstacionamientosPartners');
     }

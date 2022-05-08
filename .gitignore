@@ -101,3 +101,4 @@ pmariadb-persistence/data/mysql/transaction_registry.ibd
 pmariadb-persistence/data/mysql/user.frm
 pmariadb-persistence/data/performance_schema/db.opt
 pmariadb-persistence/data/test/db.opt
+*.log

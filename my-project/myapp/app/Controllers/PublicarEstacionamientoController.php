@@ -3,6 +3,8 @@ namespace App\Controllers;
 //
 use CodeIgniter\Controller;
 //
+use App\Models\BuscarEstacionamientosPartnersModel;
+use App\Entities\EstacionamientosPartners;
 use App\Models\PublicarEstacionamientoModel;
 use App\Entities\Estacionamientos;
 //
@@ -21,7 +23,7 @@ class PublicarEstacionamientoController extends Controller
     // Vamos a la vista ... pero con los datos!!!
    // return view('reserva/lista',$data);
 //}
-public function index(){
+public function index2(){
     //
     session_start();
     // Obtenemos la clase del Model que controla los conciertos
@@ -37,7 +39,21 @@ public function index(){
     return view('reserva/publicarEstacionamiento',$data);
 }
 
-
+public function index(){
+    //
+    session_start();
+    // Obtenemos la clase del Model que controla los conciertos
+    $mod2 = new BuscarEstacionamientosPartnersModel();
+    // Buscamos los conciertos
+    $reservas2 = $mod2->soloConA();
+    // UN EJEMPLO PARA MASA ADELANTE
+    //$reservas = $mod->soloConA();
+    
+    // Ponemos en la 'data transiente' la data que queremos mostrar
+    $data2['registros2'] = $reservas2;
+    // Vamos a la vista ... pero con los datos!!!
+    return view('reserva/publicarEstacionamiento',$data2);
+}
 private function recuperaReserva($unId){
 
     $this->request->getPost("cod_estacionamiento");

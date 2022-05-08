@@ -8,7 +8,7 @@ class EstacionamientosPartners extends Entity
 {
 
     protected $datamap = [
-        "ide" => "estacionamiento_id",
+        "ide" => "estacionamientos_partners_id",
         "alias" => "alias_estacionamiento",
         "direst" => "direccion_estacionamiento",
         "pmedmin" => "precio_medio_minuto",
