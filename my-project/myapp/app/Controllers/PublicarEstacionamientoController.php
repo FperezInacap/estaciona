@@ -86,6 +86,7 @@ public function agregar02Continuar(){
     $unEstacionamientos->estado =  $this->request->getVar('estado');
     $unEstacionamientos->tard =  $this->request->getVar('tarifa_dia');
     $unEstacionamientos->tarm =  $this->request->getVar('tarifa_minuto');
+    $unEstacionamientos->est_partner =  $this->request->getVar('cod_estac_partner');
     // Obtenemos la clase del Model que controla los conciertos
     $mod = new PublicarEstacionamientoModel();
     // MAndamos la Transacciòn ala Base de DAtos

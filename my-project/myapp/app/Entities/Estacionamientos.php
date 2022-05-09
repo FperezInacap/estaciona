@@ -13,6 +13,7 @@ class Estacionamientos extends Entity
         "tarm" => "estacionamiento_tarifa_min",
         "tard" => "estacionamiento_tarifa_dia",
         "estado" => "estado",
+        "est_partner" => "estacionamiento_partners_id",
         ];
 
     protected $casts   = [];

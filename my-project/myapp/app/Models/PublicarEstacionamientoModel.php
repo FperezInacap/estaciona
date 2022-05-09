@@ -7,7 +7,7 @@ class PublicarEstacionamientoModel extends Model
     protected $table = 'estacionamientos';
     protected $primaryKey = 'estacionamientos_id';
     
-    protected $allowedFields = ['estacionamiento_cod','estacionamiento_tarifa_min', 'estacionamiento_tarifa_dia', 'estado'];
+    protected $allowedFields = ['estacionamiento_cod','estacionamiento_tarifa_min', 'estacionamiento_tarifa_dia', 'estado','estacionamiento_partners_id'];
 
     // Tipo de dato a devolver
     protected $returnType = 'App\Entities\Estacionamientos'; 
