@@ -8,14 +8,13 @@ class Reserva extends Entity
 {
 
     protected $datamap = [
-        "id" => "estacionamiento_id",
-        "nombre" => "estacionamiento_codigo",
-        "tarm" => "tarifa_minuto",
-        "tard" => "tarifa_dia",
+        "id" => "estacionamientos_id",
+        "nombre" => "estacionamiento_cod",
+        "tarm" => "estacionamiento_tarifa_min",
+        "tard" => "estacionamiento_tarifa_dia",
         "estado" => "estado",
-        "alias" => "alias_estacionamiento",
-        "dir" => "direccion",
-    ];
+        "est_partner" => "estacionamiento_partners_id",
+        ];
 
     protected $casts   = [];
 }

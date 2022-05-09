@@ -3,8 +3,8 @@
 <?= $this->section('contenido') ?>
 
 <div align=center>
-  <?php if($registros): ?>
-          <?php foreach($registros as $reg): ?>
+  <?php if($registros2): ?>
+          <?php foreach($registros2 as $reg): ?>
           <tr>
             <td><h4><?php echo $reg->alias; ?></h4></td>
              </tr>
@@ -37,8 +37,8 @@
 				// https://getbootstrap.com/docs/4.0/components/buttons/
 				// Simpre respetar usar el mismo foramto
 		   ?>
-          <?php if($registros): ?>
-          <?php foreach($registros as $reg): ?>
+          <?php if($registros2): ?>
+          <?php foreach($registros2 as $reg): ?>
           <tr>
             <td align=center><?php echo $reg->nombre; ?></td>
             <td align=center><a href="<?php echo site_url('/reserva-tarifaMinuto/'.$reg->id);?>" class="btn btn-secondary btn-sm"><?php echo $reg->tarm; ?></a>

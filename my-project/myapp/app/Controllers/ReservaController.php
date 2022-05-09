@@ -5,6 +5,10 @@ use CodeIgniter\Controller;
 //
 use App\Models\ReservaModel;
 use App\Entities\Reserva;
+use App\Models\BuscarEstacionamientosPartnersModel;
+use App\Entities\EstacionamientosPartners;
+use App\Models\PublicarEstacionamientoModel;
+use App\Entities\Estacionamientos;
 //
 class ReservaController extends Controller
 {
@@ -22,6 +26,22 @@ class ReservaController extends Controller
    // return view('reserva/lista',$data);
 //}
 public function index(){
+    //
+    session_start();
+    // Obtenemos la clase del Model que controla los conciertos
+    $mod2 = new ReservaModel();
+    // Buscamos los conciertos
+    $reservas2 = $mod2->soloConA();
+    // UN EJEMPLO PARA MASA ADELANTE
+    //$reservas = $mod->soloConA();
+    
+    // Ponemos en la 'data transiente' la data que queremos mostrar
+    $data2['registros2'] = $reservas2;
+    // Vamos a la vista ... pero con los datos!!!
+    return view('reserva/lista',$data2);
+}
+
+public function index2(){
     //
     session_start();
     // Obtenemos la clase del Model que controla los conciertos
