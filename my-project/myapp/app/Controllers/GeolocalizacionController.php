@@ -3,10 +3,14 @@ namespace App\Controllers;
 //
 use CodeIgniter\Controller;
 //
+use App\Models\ReservaModel;
+use App\Entities\Reserva;
 use App\Models\BuscarEstacionamientosPartnersModel;
 use App\Entities\EstacionamientosPartners;
+use App\Models\PublicarEstacionamientoModel;
+use App\Entities\Estacionamientos;
 //
-class BuscarEstacionamientosPartnersController extends Controller
+class GeolocalizacionController extends Controller
 {
 //public function index(){
     // Obtenemos la clase del Model que controla los conciertos
@@ -23,10 +27,25 @@ class BuscarEstacionamientosPartnersController extends Controller
 //}
 public function index(){
     //
+    //session_start();
+    // Obtenemos la clase del Model que controla los conciertos
+    //$mod2 = new ReservaModel();
+    // Buscamos los conciertos
+    //$reservas2 = $mod2->soloConA();
+    // UN EJEMPLO PARA MASA ADELANTE
+    //$reservas = $mod->soloConA();
+    
+    // Ponemos en la 'data transiente' la data que queremos mostrar
+    //$data2['registros2'] = $reservas2;
+    // Vamos a la vista ... pero con los datos!!!
+    return view('reserva/geolocalizacion');
+}
+
+public function index2(){
+    //
     session_start();
     // Obtenemos la clase del Model que controla los conciertos
-   
-    $mod = new BuscarEstacionamientosPartnersModel();
+    $mod = new ReservaModel();
     // Buscamos los conciertos
     //$reservas = $mod->todEs();
     // UN EJEMPLO PARA MASA ADELANTE
@@ -35,14 +54,14 @@ public function index(){
     // Ponemos en la 'data transiente' la data que queremos mostrar
     $data['registros'] = $reservas;
     // Vamos a la vista ... pero con los datos!!!
-    return view('reserva/buscarEstacionamientosPartners',$data);
+    return view('reserva/lista',$data);
 }
 
 
 private function recuperaReserva($unId){
     
     // Obtenemos la clase del Model que controla los conciertos
-    $mod = new BuscarEstacionamientosPartnersModel();
+    $mod = new ReservaModel();
     // Buscamos el Concierto por la PK
     $reserva = $mod->find($unId);
     // Dejamos el concierto la 'data transiente'
@@ -64,7 +83,7 @@ public function agregar01Formulario(){
 
 public function agregar02Continuar(){
     // Recuperamos los datos desde el formulario (porque se enviaron por un POST y Request)
-    $unaReserva = new BuscarEstacionamientoPartners();
+    $unaReserva = new Reserva();
     $unaReserva->nombre =  $this->request->getVar('concierto');
     $unaReserva->ubicacion =  $this->request->getVar('ubicacion');
     // Obtenemos la clase del Model que controla los conciertos
@@ -116,4 +135,10 @@ public function eliminar02Continuar(){
  public function cancelar(){
     return $this->index();
  }
+
+
+
+
+
+    
 }

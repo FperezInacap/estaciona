@@ -103,3 +103,4 @@ $routes->add('login-login2', 'LoginLogOutController::login03Formulario');
 $routes->add('login-login02Validar/', 'LoginLogOutController::login03Validar/');
 $routes->get('reserva-publicarEstacionamiento', 'PublicarEstacionamientoController::index');
 $routes->post('estacionamiento-agregar-continuar', 'PublicarEstacionamientoController::agregar02Continuar');
+$routes->get('reserva-geolocalizacion', 'GeolocalizacionController::index');
