@@ -50,7 +50,7 @@
        </tbody>
      </table>
   </div>
- 
+  <div align="right"> <a href="<?php echo site_url('/login-volver/');?>" class="btn btn-secondary btn-sm">Volver</a></div>
 <script>
     $(document).ready( function () {
       $('#users-list').DataTable();

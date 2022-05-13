@@ -38,6 +38,11 @@ public function index(){
     return view('reserva/buscarEstacionamientosPartners',$data);
 }
 
+public function volver(){
+    session_start();
+    return view('login/index'); 
+}
+
 
 private function recuperaReserva($unId){
     

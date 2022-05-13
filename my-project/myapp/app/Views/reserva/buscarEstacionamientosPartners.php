@@ -47,7 +47,7 @@
      </table>
   </div>
 
-  <div align="right"> <a href="<?php echo site_url('/home/');?>" class="btn btn-secondary btn-sm">Volver</a></div>
+  <div align="right"> <a href="<?php echo site_url('/login-volver/');?>" class="btn btn-secondary btn-sm">Volver</a></div>
   
  
 <script>
