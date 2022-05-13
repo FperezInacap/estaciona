@@ -38,6 +38,11 @@ public function index(){
 }
 
 
+public function volver(){
+    session_start();
+    return view('login/index2'); 
+}
+
 private function recuperaReserva($unId){
 
     $this->request->getPost("cod_estacionamiento");

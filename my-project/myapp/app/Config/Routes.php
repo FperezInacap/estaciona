@@ -98,7 +98,8 @@ $routes->get('reserva-consultarEstacionamiento', 'ConsultarEstacionamientoContro
 $routes->get('reserva-buscarEstacionamientosPartners', 'BuscarEstacionamientosPartnersController::index');
 $routes->add('login-login', 'LoginLogOutController::login01Formulario');
 $routes->add('login-login01Validar/', 'LoginLogOutController::login02Validar/');
-$routes->add('login-volver/', 'buscarEstacionamientosPartnersController::volver/');
+$routes->add('login-volver/', 'BuscarEstacionamientosPartnersController::volver/');
+$routes->add('login-volver2/', 'ConsultarEstacionamientoController::volver/');
 $routes->add('login-logout', 'LoginLogOutController::logout');
 $routes->add('login-login2', 'LoginLogOutController::login03Formulario');
 $routes->add('login-login02Validar/', 'LoginLogOutController::login03Validar/');

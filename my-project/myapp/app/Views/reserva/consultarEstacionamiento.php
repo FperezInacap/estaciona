@@ -28,6 +28,7 @@
   </select>
   <br> <br>
   <input type="submit" value="buscar" class="btn btn-primary btn-sm" align="center">
+  <a href="<?php echo site_url('/login-volver2/');?>" class="btn btn-secondary btn-sm">Volver</a>
 </div>
 
 
