@@ -3,11 +3,11 @@
 <?= $this->section('contenido') ?>
 <!DOCTYPE html>
 <html>
-<body onLoad="getLocation()">
-<p id="demo"></p>
+<body onLoad="getLocation()" onLoad="showPosition)">
+
 
 <h5 align="center">Buscar Estacionameinto</h5>
-
+<p id="demo"></p>
         <div class="mt-3">
      <table class="table table-bordered" id="users-list">
        <thead>
