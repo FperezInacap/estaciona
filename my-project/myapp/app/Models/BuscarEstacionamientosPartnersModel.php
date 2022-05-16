@@ -66,7 +66,8 @@ class BuscarEstacionamientosPartnersModel extends Model
 
     public function soloConA(){
         $b = $this->builder();
-        $b->where('estacionamientos_p_latitud','-33402'); // esto es concierto_nombre like '%A%'*/
+        $lat = "2";
+        $b->where('estacionamientos_p_latitud',$lat); // esto es concierto_nombre like '%A%'*/
         $b->orderBy('estacionamientos_partners_id', 'ASC');
         $consulta = $b->get();
         return $consulta->getCustomResultObject('App\Entities\EstacionamientosPartners');
