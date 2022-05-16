@@ -25,7 +25,7 @@ public function index(){
     //
     session_start();
     // Obtenemos la clase del Model que controla los conciertos
-   
+       
     $mod = new BuscarEstacionamientosPartnersModel();
     // Buscamos los conciertos
     //$reservas = $mod->todEs();

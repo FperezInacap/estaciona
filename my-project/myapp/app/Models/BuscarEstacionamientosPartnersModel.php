@@ -7,7 +7,7 @@ class BuscarEstacionamientosPartnersModel extends Model
     protected $table = 'estacionamientos_partners';
     protected $primaryKey = 'estacionamientos_partners_id';
     
-    protected $allowedFields = ['alias_estacionamiento','direccion_estacionamiento', 'precio_medio_minuto', 'precio_medio_dia','ciudad'];
+    protected $allowedFields = ['alias_estacionamiento','direccion_estacionamiento', 'precio_medio_minuto', 'precio_medio_dia','ciudad','estacionamientos_p_latitud','estacionamientos_p_longitud'];
 
     // Tipo de dato a devolver
     protected $returnType = 'App\Entities\EstacionamientosPartners'; 
@@ -66,7 +66,7 @@ class BuscarEstacionamientosPartnersModel extends Model
 
     public function soloConA(){
         $b = $this->builder();
-       /* $b->where('ciudad','santiago'); // esto es concierto_nombre like '%A%'*/
+        $b->where('estacionamientos_p_latitud','-33402'); // esto es concierto_nombre like '%A%'*/
         $b->orderBy('estacionamientos_partners_id', 'ASC');
         $consulta = $b->get();
         return $consulta->getCustomResultObject('App\Entities\EstacionamientosPartners');

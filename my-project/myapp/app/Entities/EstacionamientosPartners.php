@@ -14,6 +14,8 @@ class EstacionamientosPartners extends Entity
         "pmedmin" => "precio_medio_minuto",
         "pmeddia" => "precio_medio_dia",
         "ciudad" => "ciudad",
+        "latitud" => "estacionamientos_p_latitud",
+        "longitud" => "estacionamientos_p_longitud",
     ];
 
     protected $casts   = [];
