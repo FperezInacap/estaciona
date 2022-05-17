@@ -1,54 +1,26 @@
+<?= $this->extend('/login/formausuario') ?>
+
+<?= $this->section('contenido') ?>
 <!DOCTYPE html>
 <html>
-<body onload="getLocation()">
+<body>
 
-<p>Click the button to get your coordinates.</p>
+<h1>Mapa estaciona</h1>
 
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
+<div align="center" id="googleMap" style="width:50%;height:400px;align:center"></div>
 
 <script>
-var x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  var lat =  position.coords.latitude;
-  var long = position.coords.longitude;
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-  console.log("Tu posision es...:" + lat + "," + long);
-  windows.location = "geolocalizacion.php?lat=" + lat;  
-
-    
-    
-
+function myMap() {
+var mapProp= {
+  
+  center:new google.maps.LatLng(-33.4051476,-70.6827313),
+  zoom:15,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
-<?php
-        $var_PHP = "<script> document.writeln(lat); </script>"; // igualar el valor de la variable JavaScript a PHP 
 
-    echo $var_PHP   // muestra el resultado 
-
-    ?>
-
-<script>
-  var lat =  "position.coords.latitude";
-  var long = position.coords.longitude;
-var variablejs = "contenido de la variable javascript" ;
-</script>
-<?php
-$variablephp = "<script> document.write(lat) </script>";
-echo "variablephp = $variablephp";
-?>
-
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw6WsNzg_29tKLgEulinYe-16IJ2dI2K0&callback=myMap"></script>
+<?= $this->endSection() ?>
 </body>
-</html>
+</html>   
