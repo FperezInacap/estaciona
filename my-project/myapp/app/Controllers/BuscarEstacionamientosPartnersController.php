@@ -32,7 +32,7 @@ public function buscarConGeo(){
     // Buscamos los conciertos
     //$reservas = $mod->todEs();
     // UN EJEMPLO PARA MASA ADELANTE
-    $reservas = $mod->find("1");
+    $reservas = $mod->soloConA();
     
     // Ponemos en la 'data transiente' la data que queremos mostrar
     $data['registros'] = $reservas;
