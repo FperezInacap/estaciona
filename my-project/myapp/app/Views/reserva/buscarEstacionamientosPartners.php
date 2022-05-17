@@ -3,11 +3,20 @@
 <?= $this->section('contenido') ?>
 <!DOCTYPE html>
 <html>
-<body onLoad="getLocation()" onLoad="showPosition)">
+
+<div>
+  Latitud: <?php echo $latitud*10000000 ?><br/>
+  Longitud: <?php echo $longitud*10000000 ?><br/>
+<?php 
+$lat_entera = $latitud*10000000;
+$long_entera = $longitud*10000000;
+echo $lat_entera ." ". $long_entera;
+?>
+
+</div>
 
 
 <h5 align="center">Buscar Estacionameinto</h5>
-<p id="demo"></p>
         <div class="mt-3">
      <table class="table table-bordered" id="users-list">
        <thead>
@@ -16,7 +25,8 @@
              <th >Tarifa Promedio Minuto</th>
              <th >Tarifa promedio dia</th>
              <th >Direccion</th>
-             <th >Ciudad</th>
+             <th >Latitud</th>
+             <th >Longitud</th>
              
           </tr>
        </thead>
@@ -39,7 +49,8 @@
             <td align=center><?php echo $reg->pmeddia;?></td>
             <td align=center><?php echo $reg->pmedmin;?></td>
             <td align=center><?php echo $reg->direst;?></td>
-            <td align=center><?php echo $reg->ciudad;?></td>
+            <td align=center><?php echo $reg->latitud;?></td>
+            <td align=center><?php echo $reg->longitud  ;?></td>
              </tr>
          <?php endforeach; ?>
          <?php endif; ?>
@@ -55,22 +66,7 @@
       $('#users-list').DataTable();
   } );
 </script>
-<script>
-var x = document.getElementById("demo");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-</script> 
 <?= $this->endSection() ?>
 
 

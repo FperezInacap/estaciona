@@ -96,6 +96,7 @@ $routes->get('reserva-pagarReservaDia/(:num)', 'PagarReservaDiaController::ver/$
 $routes->get('reserva-pagarReservaMinuto/(:num)', 'PagarReservaMinutoController::ver/$1');
 $routes->get('reserva-consultarEstacionamiento', 'ConsultarEstacionamientoController::index');
 $routes->get('reserva-buscarEstacionamientosPartners', 'BuscarEstacionamientosPartnersController::index');
+$routes->post('reserva-buscarConGeo', 'BuscarEstacionamientosPartnersController::buscarConGeo');
 $routes->add('login-login', 'LoginLogOutController::login01Formulario');
 $routes->add('login-login01Validar/', 'LoginLogOutController::login02Validar/');
 $routes->add('login-volver/', 'BuscarEstacionamientosPartnersController::volver/');
@@ -107,3 +108,4 @@ $routes->get('reserva-publicarEstacionamiento', 'PublicarEstacionamientoControll
 $routes->post('estacionamiento-agregar-continuar', 'PublicarEstacionamientoController::agregar02Continuar');
 $routes->get('reserva-geolocalizacion', 'GeolocalizacionController::index');
 $routes->post('buscar-agregar-continuar', 'BuscarEstacionamientosPartnersController::index');
+$routes->post('buscar-estacionamiento-partner', 'BuscarEstacionamientosPartnersController::buscar');

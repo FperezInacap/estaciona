@@ -16,7 +16,7 @@
       $usr =   $_SESSION['USR'];
     ?>
     <img class="mb-4" src="\images\iconoestacionasmall.jpg" alt="" >
-    <a href="<?php echo site_url('/reserva-buscarEstacionamientosPartners/') ?>" class="btn btn-lg btn-primary btn-block">Buscar</a>
+    <a href="<?php echo site_url('/reserva-buscarConGeo/') ?>" class="btn btn-lg btn-primary btn-block">Buscar</a>
     <a href="<?php echo site_url('/reserva-lista/') ?>" class="btn btn-lg btn-primary btn-block">Reservar</a>
     <?php }else{ ?>
     <p>
@@ -26,10 +26,10 @@
 
 </div>
 <div class="container mt-5">
-    <form method="post" id="add_create" name="add_create" action="<?= site_url('/buscar-agregar-continuar') ?>">
+    <form method="post" id="add_create" name="add_create" action="<?php echo site_url('reserva-buscarConGeo') ?>">
       
       <div class="form-group">
-      <input type="text" name="codigo_estacionamiento" placeholder="Codigo de estacionamiento" class="form-control"/>
+      <input type="text" name="ide_estacionamiento" placeholder="Codigo de estacionamiento" class="form-control"/>
       </div>
       <div class="form-group">
       <button type="submit" class="btn btn-primary btn-sm">Agregar</button>
