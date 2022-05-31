@@ -36,7 +36,7 @@
            map,
            title:"Estacionamiento 2"
          });
-         getPosition()
+         getPosition();
       }
 
       function getPosition(){
@@ -58,9 +58,7 @@
         marker.setPosition(myLatLng);
         map.setCenter(myLatLng);
 
-        
-
-    }
+         }
 
     function errorHandler(err){
         if(err.code == 1){
