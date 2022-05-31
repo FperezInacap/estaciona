@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,16 +16,26 @@
       var geoLoc;
 
       function initMap(){
-        const myLatLng =  {lat: -25.363, lng:  131.044};
+        const myLatLng =  {lat: -33.4051, lng:  -70.6826};
         map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
+            zoom: 13,
             center: myLatLng,
          });
          marker = new google.maps.Marker({
            position: myLatLng,
            map,
-           title:"Hola Mundo"
+           title:"Mi Ubicación"
+         });
+         marker = new google.maps.Marker({
+           position: {lat: -33.4046, lng:  -70.6663},
+           map,
+           title:"Estacionamiento 1"
          });  
+         marker = new google.maps.Marker({
+           position: {lat: -33.4680, lng:  -70.6262},
+           map,
+           title:"Estacionamiento 2"
+         });
          getPosition()
       }
 
@@ -65,7 +76,8 @@
     </script>
  <style type="text/css">
 #map {
-  height: 100%;
+  height: 80%;
+  width:  70%;
 }
 
 html,
