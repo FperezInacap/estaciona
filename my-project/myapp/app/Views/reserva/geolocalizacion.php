@@ -74,14 +74,15 @@
     </script>
  <style type="text/css">
 #map {
-  height: 70%;
+  height: 65%;
   width:  100%;
+  
 }
 
 html,
 body {
   height: 100%;
-  margin: 0;
+  margin: 3;
   padding: 0;
 }
 </style>
