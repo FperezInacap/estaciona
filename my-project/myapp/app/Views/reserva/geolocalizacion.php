@@ -74,8 +74,8 @@
     </script>
  <style type="text/css">
 #map {
-  height: 80%;
-  width:  70%;
+  height: 70%;
+  width:  100%;
 }
 
 html,
@@ -87,7 +87,8 @@ body {
 </style>
   </head>
   <body>
-    <div id="map"></div>
+  <h2 align="center"> <img class="mb-4" src="/images/logoestacionasmall.jpg" alt=""></h2>  
+  <div id="map"></div>
      
 </body>
 </html>
