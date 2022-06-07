@@ -8,7 +8,7 @@
 <form name="lat_lon" method="post" action="<?php echo site_url('reserva-buscarConGeo') ?>">
     <input type="hidden" name="latitud" value="0"><BR>
     <input type="hidden" name="longitud" value="0"><BR>
-    <input type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"/>
+    <input type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;" />
 </form>
 <script>
 

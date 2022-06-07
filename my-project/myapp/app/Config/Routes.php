@@ -109,3 +109,4 @@ $routes->post('estacionamiento-agregar-continuar', 'PublicarEstacionamientoContr
 $routes->get('reserva-geolocalizacion', 'GeolocalizacionController::index');
 $routes->post('buscar-agregar-continuar', 'BuscarEstacionamientosPartnersController::index');
 $routes->post('buscar-estacionamiento-partner', 'BuscarEstacionamientosPartnersController::buscar');
+$routes->get('reserva-pagos', 'PagosController::index');
