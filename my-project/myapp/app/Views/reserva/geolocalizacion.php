@@ -53,8 +53,8 @@
     function showLocationOnMap(position){
         var latitud = position.coords.latitude;
         var longitud = position.coords.longitude;
-        console.log(latitud +longitud);
-        const myLatLng = {lat: latitud, lang: longitud};
+        console.log("latitud:"+latitud +"lomngitud" + longitud);
+        const myLatLng = {lat: latitud, lng: longitud};
         marker.setPosition(myLatLng);
         map.setCenter(myLatLng);
 
